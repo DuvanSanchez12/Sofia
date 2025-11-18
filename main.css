@@ -81,7 +81,7 @@ box-shadow: rgb(0 0 0 / 0%) 1px 4px 7px, rgb(0 0 0 / 27%) 1px 3px 6px;
 #drag-container p {
     line-height: 116px;
     position: absolute;
-    top: 100%;
+    top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%,-50%) rotateX(90deg);
     transform: translate(-50%,-50%) rotateX(90deg);
@@ -90,7 +90,8 @@ box-shadow: rgb(0 0 0 / 0%) 1px 4px 7px, rgb(0 0 0 / 27%) 1px 3px 6px;
 }
 
   #drag-container p > span {
-
+    display: block;
+    margin-bottom: 10px;
 
   }
 
@@ -118,7 +119,7 @@ box-shadow: rgb(0 0 0 / 0%) 1px 4px 7px, rgb(0 0 0 / 27%) 1px 3px 6px;
     border: none;
     /* border-top: 9px dotted #ff3600; */
     position: absolute;
-    top: 13%;
+    top: 100px;
     left: 24%;
     opacity: 0;                     /* by default hidden */
     animation: showUp 1s forwards;  /* run animation */
@@ -209,21 +210,26 @@ box-shadow: rgb(0 0 0 / 0%) 1px 4px 7px, rgb(0 0 0 / 27%) 1px 3px 6px;
     right: 0px;
     overflow: hidden;
 }
-
 p {
-    font-weight: 600;
-    font-size: 4vw;
-    text-align: center;
-    
+  font-weight: 600;
+  font-size: 4vw;
+  text-align: center;
 }
 
-@media screen and (max-width: 658px)    {
+/* Pantallas pequeñas */
+@media (max-width: 658px) {
   p {
-    font-weight: 600;
-    font-size: 12vw;
-    text-align: center;
+    font-size: 10vw; /* un poco más balanceado que 12vw */
+  }
 }
+
+/* Pantallas muy grandes */
+@media (min-width: 1400px) {
+  p {
+    font-size: 2vw;
+  }
 }
+
 
 .btn{
     position: absolute;
