@@ -107,9 +107,10 @@ box-shadow: rgb(0 0 0 / 0%) 1px 4px 7px, rgb(0 0 0 / 27%) 1px 3px 6px;
   }
 .button {
     /* width: 500px; */
-    height: 121px;
-    padding: 10px 30px;
-    background: url('./images/GiftBox.png');
+    height: 101px;
+    width: 0px;
+    padding: 30px 35px;
+    background: url('./images/turism.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
